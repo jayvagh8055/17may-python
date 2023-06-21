@@ -1,0 +1,211 @@
+ 					module 1
+
+1)Software is a set of instructions,
+ data or programs used to operate computers and execute specific tasks.
+ It is the opposite of hardware,
+ which describes the physical aspects of a computer.
+
+2)What are the 5 types of application?
+	Types of Application Software: Some of the commonly used application software include:
+					Word Processing Software.
+					Graphics Software.
+					Spreadsheet Software.
+					Presentation Software.
+					Web Browsers.
+
+3)Computer programming is the process of writing code to facilitate specific actions in a computer, 
+application or software program, and instructs them on how to perform.
+
+4)Python is a computer programming language often used to build websites and software,
+ automate tasks, and conduct data analysis.
+
+
+
+                                 module 2	
+
+
+"""
+#1)
+num=int(input("enter number :"))
+
+if(num>0):
+ print("positive")
+elif num==0:
+    print("it is zero")
+else:
+    print("Negative number")
+ 
+ 
+def factorial(n):
+    if n == 0 or n == 1:
+        return 1
+    else:
+        return n * factorial(n-1)
+
+
+print(factorial(5))    
+print(factorial(0))    
+
+#3)
+def fibonacci series(n):
+    series = []
+    a, b = 0, 1
+    while a <= n:
+        series.append(a)
+        a, b = b, a + b
+    return series
+
+
+print(fibonacci series(10))  
+print(fibonacci series(20))   
+
+#6)
+def swap with temp(a, b):
+    temp = a
+    a = b
+    b = temp
+    return a, b
+
+
+def swap without temp(a, b):
+    a, b = b, a
+    return a, b
+
+# example
+x = 5
+y = 10
+x, y = swap with temp(x, y)
+print(x, y)    
+
+a = 15
+b = 20
+a, b = swap without temp(a, b)
+print(a, b)    
+ 
+ #7)
+ def check_even_odd(number):
+    if number % 2 == 0:
+        return f"{number} is even."
+    else:
+        return f"{number} is odd
+
+8)def check vowel(letter):
+    vowels = ['a', 'e', 'i', 'o', 'u']
+    if letter.lower() in vowels:
+        return f"{letter} is a vowel."
+    else:
+        return f"{letter} is not a vowel."
+
+
+print(check vowel('a'))    
+print(check vowel('b'))    
+
+#9)def sum of three integers(a, b, c):
+    if a == b or b == c or a == c:
+        return 0
+    else:
+        return a + b + c
+
+
+print(sum of three integers(2, 3, 4))    
+print(sum of three integers(2, 2, 4))    
+
+#10)def count_word occurrences(sentence):
+    words = sentence.split()
+    word count = {}
+    for word in words:
+        if word in word_count:
+            word count[word] += 1
+        else:
+            word count[word] = 1
+    return word count
+
+print(count word occurrences("Hello, hello, world, Hello"))   
+print(count word occurrences("Python is awesome. Python is cool."))   
+
+#11)def swap first two characters(str1, str2):
+    new str1 = str2[:2] + str1[2:]
+    new str2 = str1[:2] + str2[2:]
+    return new str1 + " " + new str2
+
+
+print(swap first two characters("Hello", "World"))   
+
+
+#12)
+
+def add ing ly(string):
+    if len(string) < 3:
+        return string
+    elif string[-3:] == 'ing':
+        return string + 'ly'
+    else:
+        return string + 'ing'
+
+
+print(add ing ly("read"))
+print(add ing ly("go"))     
+
+#13)
+
+def replace_not poor(string):
+    not_index = string.find('not')
+    poor_index = string.find('poor')
+    
+    if not_index != -1 and poor_index != -1 and poor_index > not_index:
+        return string[:not_index] + 'good' + string[poor_index + 4:]
+    else:
+        return string
+
+print(replace_not_poor("The weather is not so poor."))   
+print(replace_not_poor("The car is poor, but not old."))   
+
+#14)
+
+def longest_word length(words):
+    max_length = 0
+    for word in words:
+        if len(word) > max_length:
+            max_length = len(word)
+    return max_length
+
+
+word_list = ["apple", "banana", "orange", "watermelon"]
+print(longest_word_length(word_list))  
+
+#15)
+
+def reverse_string_if_multiple_of_four(string):
+    if len(string) % 4 == 0:
+        return string[::-1]
+    else:
+        return string
+
+
+print(reverse_string_if_multiple_of_four("Python"))   
+print(reverse_string_if_multiple_of_four("Hello"))    
+  
+
+#16)
+def get_string_ends(string):
+    if len(string) < 2:
+        return ""
+    else:
+        return string[:2] + string[-2:]
+
+print(get_string_ends("Hello"))     
+print(get_string_ends("Python"))    
+        
+
+#17)
+def insert_string_in_middle(original_string, string_to_insert):
+    middle_index = len(original_string) 
+    return original_string[:middle_index] + string_to_insert + original_string[middle_index:]
+
+
+print(insert_string_in_middle("Hello", "world"))    
+print(insert_string_in_middle("Python", "is"))     
+
+"""
+
+	
